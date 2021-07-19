@@ -2,9 +2,10 @@
 
 import speech_recognition as sr 
 
-r = sr.recognizer()
+r = sr.Recognizer()
 
-with sr.microphone() as source:
+with sr.Microphone() as source:
+    while true:
     audio = r.listen(source)
 
-    print(r.recognize_google(audio))
+        print(r.recognize_google(audio))
